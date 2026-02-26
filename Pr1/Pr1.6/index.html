@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JavaScript Практика 1</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>JavaScript - Практична робота 1</h1>
+            <p>Відкрийте консоль (F12), щоб побачити результати</p>
+        </div>
+        <div class="calculator-container">
+            <h2>Калькулятор віку</h2>
+            <div class="form-group">
+                <label for="birthYear">Рік народження:</label>
+                <input type="number" id="birthYear"
+                placeholder="1995" min="1900" max="2024">
+            </div>
+            <button id="calculateAge">Розрахувати вік</button>
+            <div id="ageResult"></div>
+        </div>
+        <div class="calculator-container">
+            <h2>Конвертер температури</h2>
+            <div class="form-group">
+                <label for="tempValue">Температура (°C):</label>
+                <input type="number" id="tempValue" placeholder="25">
+            </div>
+            <button id="convertTemp">Конвертувати</button>
+            <div id="tempResult"></div>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>
