@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <title>Date Tasks</title>
+    </head>
+    <body>
+        <h2>1. Day of Week</h2>
+        <input id="dateInput" placeholder="YYYY-MM-DD">
+        <button onclick="handleDay()">Check</button>
+        <div id="dayResult"></div>
+        
+        <h2>2. Age Calculator</h2>
+        <input id="birthInput" placeholder="YYYY-MM-DD">
+        <button onclick="handleAge()">Calculate</button>
+        <div id="ageResult"></div>
+
+        <h2>3. Meeting Validator</h2>
+        <input id="m1start" placeholder="09:00">
+        <input id="m1end" placeholder="11:00">
+        <input id="m2start" placeholder="10:00">
+        <input id="m2end" placeholder="12:00">
+        <button onclick="handleMeeting()">Validate</button>
+        <div id="meetingResult"></div>
+
+        <h2>4. Days Until Event</h2>
+        <input id="eventDate" placeholder="YYYY-MM-DD">
+        <button onclick="handleDays()">Calculate</button>
+        <div id="daysResult"></div>
+
+        <h2>5. Time Zone Converter</h2>
+        <input id="timeValue" placeholder="12:00">
+        <input id="sourceZone" placeholder="UTC">
+        <input id="targetZone" placeholder="EET">
+        <button onclick="handleZone()">Convert</button>
+        <div id="zoneResult"></div>
+        
+        <script src="script.js"></script>
+    </body>
+</html>
