@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Algorithms Demo</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 30px;
+    }
+
+    .container {
+      background: white;
+      padding: 25px;
+      border-radius: 8px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    h2 {
+      margin-top: 30px;
+    }
+
+    input {
+      margin: 5px;
+      padding: 6px;
+      width: 150px;
+    }
+
+    button {
+      padding: 6px 12px;
+      margin: 5px;
+      cursor: pointer;
+    }
+
+    .result {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #333;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <h1>Algorithms Demo</h1>
+
+    <h2>Merge Sort</h2>
+    <input id="mergeInput" placeholder="1, 5, 3, 2">
+    <button onclick="runMerge()">Sort</button>
+    <div id="mergeResult" class="result"></div>
+
+    <h2>Quick Select</h2>
+    <input id="quickInput" placeholder="7, 10, 4, 3, 20">
+    <input id="quickK" placeholder="k">
+    <button onclick="runQuick()">Find</button>
+    <div id="quickResult" class="result"></div>
+
+    <h2>Search Rotated Sorted Array</h2>
+    <input id="rotatedInput" placeholder="4, 5, 6, 7, 0, 1, 2">
+    <input id="targetInput" placeholder="target">
+    <button onclick="runRotated()">Search</button>
+    <div id="rotatedResult" class="result"></div>
+
+    <h2>First and Last Position</h2>
+    <input id="rangeInput" placeholder="5, 7, 7, 8, 8, 10">
+    <input id="rangeTarget" placeholder="target">
+    <button onclick="runRange()">Find</button>
+    <div id="rangeResult" class="result"></div>
+
+    <h2>Insertion Sort List</h2>
+    <input id="listInput" placeholder="4, 2, 1, 3">
+    <button onclick="runList()">Sort List</button>
+    <div id="listResult" class="result"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
