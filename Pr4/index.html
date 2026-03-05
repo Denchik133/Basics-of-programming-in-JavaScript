@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Math Utilities</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      background: #f4f4f4;
+      padding: 30px;
+    }
+
+    .container {
+      background: white;
+      padding: 25px;
+      border-radius: 8px;
+      max-width: 750px;
+      margin: auto;
+    }
+
+    input {
+      margin: 5px;
+      padding: 6px;
+      width: 150px;
+    }
+
+    button {
+      padding: 6px 12px;
+      margin: 5px;
+      cursor: pointer;
+    }
+
+    .result {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <h1>Math Utilities (Recursion & Memoization)</h1>
+
+    <h2>Fibonacci</h2>
+    <input id="fibInput" placeholder="n">
+    <button onclick="runFibonacci()">Calculate</button>
+    <div id="fibResult" class="result"></div>
+
+    <h2>Factorial</h2>
+    <input id="factInput" placeholder="n">
+    <button onclick="runFactorial()">Calculate</button>
+    <div id="factResult" class="result"></div>
+
+    <h2>Prime Check</h2>
+    <input id="primeInput" placeholder="number">
+    <button onclick="runPrime()">Check</button>
+    <div id="primeResult" class="result"></div>
+
+    <h2>Range</h2>
+    <input id="rangeStart" placeholder="start">
+    <input id="rangeEnd" placeholder="end">
+    <input id="rangeStep" placeholder="step">
+    <button onclick="runRange()">Generate</button>
+    <div id="rangeResult" class="result"></div>
+
+    <h2>Clamp</h2>
+    <input id="clampValue" placeholder="value">
+    <input id="clampMin" placeholder="min">
+    <input id="clampMax" placeholder="max">
+    <button onclick="runClamp()">Clamp</button>
+    <div id="clampResult" class="result"></div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
