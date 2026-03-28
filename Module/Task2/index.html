@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <title>Student</title>
+        <style>
+        body {
+            font-family: Arial;
+            padding: 40px;
+            background: #f4f4f4;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        input, button {
+            width: 100%;
+            margin-top: 10px;
+            padding: 10px;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Student</h1>
+            <input id="name" placeholder="Ім'я">
+            <input id="grades" placeholder="Оцінки через кому">
+            <button onclick="runStudent()">Створити</button>
+            <pre id="result"></pre>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
