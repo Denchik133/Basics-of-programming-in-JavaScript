@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <title>Weather Dashboard</title>
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        .result {
+            margin-top: 20px;
+            padding: 10px;
+            background: #e3e7ff;
+        }
+
+        .log {
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Weather Dashboard</h1>
+            <input id="cityInput" placeholder="Введіть місто">
+            <button id="getWeather">Отримати погоду</button>
+            <div id="result" class="result"></div>
+            <div id="logs" class="log"></div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
