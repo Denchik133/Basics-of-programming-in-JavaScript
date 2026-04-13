@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <title>Warehouse + Search</title>
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        li {
+            padding: 10px;
+            background: #e3e7ff;
+            margin-top: 5px;
+        }
+
+        canvas {
+            margin-top: 20px;
+            width: 100%;
+            height: 200px;
+            background: #fff;
+            border: 1px solid #ccc;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Search Algorithms</h1>
+            <input id="searchValue" placeholder="Значення для пошуку">
+            <button id="runSearch">Пошук</button>
+            <div id="result"></div>
+            <canvas id="chart"></canvas>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <title>Warehouse Advanced</title>
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        input, button, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        li {
+            padding: 10px;
+            background: #e3e7ff;
+            margin-top: 5px;
+            cursor: pointer;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Warehouse</h1>
+            <input id="name" placeholder="Назва">
+            <input id="quantity" placeholder="Кількість">
+            <input id="price" placeholder="Ціна">
+            <input id="category" placeholder="Категорія">
+            <input id="supplier" placeholder="Постачальник">
+            <button id="addBtn">Додати</button>
+            <h3>Пошук</h3>
+            <input id="search" placeholder="Назва / категорія / постачальник">
+            <button id="searchBtn">Пошук</button>
+            <h3>Низькі запаси</h3>
+            <input id="minStock" placeholder="Мінімум">
+            <button id="lowBtn">Показати</button>
+            <h3>Сортування</h3>
+            <select id="sort">
+                <option value="price">За ціною</option>
+                <option value="quantity">За кількістю</option>
+            </select>
+            <button id="sortBtn">Сортувати</button>
+            <ul id="list"></ul>
+            <div id="info"></div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <title>Warehouse</title>
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        li {
+            padding: 10px;
+            background: #e3e7ff;
+            margin-top: 5px;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Warehouse</h1>
+            <input id="name" placeholder="Назва">
+            <input id="quantity" placeholder="Кількість">
+            <input id="price" placeholder="Ціна">
+            <input id="category" placeholder="Категорія">
+            <button id="addBtn">Додати товар</button>
+            <h3>Пошук по ціні</h3>
+            <input id="searchPrice" placeholder="Ціна">
+            <button id="searchBtn">Пошук</button>
+            <h3>Діапазон цін</h3>
+            <input id="minPrice" placeholder="Від">
+            <input id="maxPrice" placeholder="До">
+            <button id="rangeBtn">Знайти</button>
+            <ul id="list"></ul>
+            <div id="info"></div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
