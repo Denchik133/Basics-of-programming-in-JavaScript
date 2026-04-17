@@ -81,7 +81,6 @@ document.getElementById("searchBtn").addEventListener("click", () => {
     const price = Number(document.getElementById("searchPrice").value)
     const linear = linearSearch(price)
     const binary = binarySearch(price)
-
     info.textContent = `
 Linear: ${linear.comparisons} comparisons
 Binary: ${binary.comparisons} comparisons
