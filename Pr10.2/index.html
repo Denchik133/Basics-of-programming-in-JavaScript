@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <title>Crypto Tracker</title>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        .coin {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            cursor: pointer;
+        }
+        .error {
+            color: red;
+        }
+        .loading {
+            color: gray;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Crypto Tracker</h1>
+            <input id="search" placeholder="Search coin">
+            <div id="status"></div>
+            <div id="coins"></div>
+            <h3>Details</h3>
+            <canvas id="chart"></canvas>
+            <div id="details"></div>
+            <h3>Converter</h3>
+            <input id="amount" placeholder="Amount">
+            <select id="from"></select>
+            <select id="to"></select>
+            <button onclick="convert()">Convert</button>
+            <div id="convertResult"></div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
