@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <title>Zoo</title>
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            padding: 30px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        select, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        .animal {
+            padding: 10px;
+            background: #e3e7ff;
+            margin-top: 10px;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Zoo</h1>
+            <select id="filter">
+                <option value="all">All</option>
+                <option value="mammal">Mammals</option>
+                <option value="bird">Birds</option>
+                <option value="fish">Fish</option>
+            </select>
+            <button onclick="feedAll()">Feed All</button>
+            <div id="list"></div>
+            <h3>Statistics</h3>
+            <div id="stats"></div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
