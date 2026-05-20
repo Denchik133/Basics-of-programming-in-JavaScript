@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <title>Analyze Scores</title>
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            padding: 40px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        pre {
+            background: #e3e7ff;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Student Scores Analyzer</h1>
+            <textarea id="input" rows="10">
+[
+    { "name": "Іван", "score": 85 },
+    { "name": "Марія", "score": 42 },
+    { "name": "Олег", "score": 93 },
+    { "name": "Анна", "score": 55 }
+]
+            </textarea>
+            <button onclick="runAnalysis()">Analyze</button>
+            <pre id="result"></pre>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
